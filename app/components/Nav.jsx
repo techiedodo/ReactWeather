@@ -6,11 +6,11 @@ var Nav = React.createClass({
     e.preventDefault();
 
     var location = this.refs.search.value;
-    var endcodedLocation = endcodedURIComponent(location);
+    var encodeLocation = encodeURIComponent(location);
 
     if (location.length > 0){
       this.refs.search.value = '';
-      window.location.hash = '#/?location=' + endcodedLocation;
+      window.location.hash = '#/?location=' + encodeLocation;
     }
 
   },
