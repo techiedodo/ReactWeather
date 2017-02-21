@@ -1,13 +1,23 @@
 $space-large: 2.5rem;
-$title-color: rgb(17, 147, 135);
+$title-color: rgb(18, 59, 56);
 
 #app{
   height: 100vh;
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 .page-title{
   margin-top: $space-large;
   margin-bottom: $space-large;
   color: $title-color;
+}
+
+.box-section{
+  background-color: rgba(255, 255, 255, 0.65);
+  padding: 0em 2em 2em 2em;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin-top: 4em;
 }
 
 input[type=search]{
